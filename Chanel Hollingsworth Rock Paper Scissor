@@ -1,0 +1,36 @@
+playing = True
+while playing == True:
+
+  player1= str(input("Rock, Paper, or Scissors?"))
+  player2= str(input("Rock, Paper, or Scissors?"))
+
+  if player1 == 1:
+    player1 = "Rock"
+  elif player1 == 2:
+    player1 = "Paper"
+  elif player1 == 3:
+    player1 == "scissor"
+
+  print("Gamer1: ", player1)
+
+  if player2 == 1:
+    player2 = "Rock"
+  elif player2 == 2:
+    player2 = "Paper"
+  elif player2 == 3:
+    player2 == "scissor"
+
+  print("Gamer2: ", player2)
+
+  if player1 == player2:
+    print("oooh man, it's a draw!!")
+  elif (player1 == "Paper" and player2 == "Rock") or (player1 == "Rock" and player2 == "Scissor") or (player1 == "Scissor" and player2 == "Paper"):
+    print("Yesss Gamer 1, you win!")
+  else:
+    print("You lose Gamer 1, try again!")
+
+  play_again = input("Should we play again? (yes/no): ")
+  if not play_again == "yes":
+    playing = False
+
+print("See you next time!")
